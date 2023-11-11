@@ -1,0 +1,30 @@
+{
+  "name": "spotify-dj-utils",
+  "version": "1.0.0",
+  "description": "Spotify DJ Utils",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "login": "node login.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-question-this/spotify-dj-utils.git"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "Tyler Westland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/I-question-this/spotify-dj-utils/issues"
+  },
+  "homepage": "https://github.com/I-question-this/spotify-dj-utils#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0"
+  }
+}
