@@ -1,4 +1,4 @@
-const { accessToken, clientId, clientSecret, redirectUri } = require('./config.json');
+const { clientId, clientSecret, redirectUri } = require('./config.json');
 const prompt = require("prompt-sync")({ sigint: true });
 const fs = require('fs');
 
