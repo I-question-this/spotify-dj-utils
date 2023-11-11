@@ -1,12 +1,13 @@
 {
   "name": "spotify-dj-utils",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Spotify DJ Utils",
   "main": "index.js",
   "scripts": {
     "login": "node login.js",
     "get_user_playlists": "node get_user_playlists.js",
-    "read_target_playlist": "node read_target_playlist.js"
+    "read_target_playlist": "node read_target_playlist.js | tee playlist_info.csv",
+    "copy_playlist": "cat playlist_info.csv | xclip -in -selection clipboard"
   },
   "repository": {
     "type": "git",

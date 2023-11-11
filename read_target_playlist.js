@@ -10,6 +10,7 @@ spotifyApi.getPlaylist(targetPlaylistID)
 .then(function(data) {
   var total = data.body.tracks.total;
   var offset = 0;
+  console.log("Title,Artist 1, Artist 2, Artist 3, Spotify URL")
   while (offset < total) {
     spotifyApi.getPlaylistTracks(targetPlaylistID,
       {
@@ -34,7 +35,7 @@ spotifyApi.getPlaylist(targetPlaylistID)
               var artistName3 = ""
             }
             spotify_url = track.track.external_urls["spotify"]
-            console.log(`${trackName}, ${artistName1}, ${artistName2}, ${artistName3}, ${spotify_url}`)
+            console.log(`"${trackName}", "${artistName1}", "${artistName2}", "${artistName3}", "${spotify_url}"`)
           });
       },
       function(err) {
