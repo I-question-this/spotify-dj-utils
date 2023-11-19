@@ -6,8 +6,7 @@
   "scripts": {
     "login": "node login.js",
     "get_user_playlists": "node get_user_playlists.js",
-    "read_target_playlist": "node read_target_playlist.js | tee playlist_info.csv",
-    "copy_playlist": "cat playlist_info.csv | xclip -in -selection clipboard"
+    "read_target_playlist": "node read_target_playlist.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +22,7 @@
   },
   "homepage": "https://github.com/I-question-this/spotify-dj-utils#readme",
   "dependencies": {
+    "exceljs": "^4.4.0",
     "prompt-sync": "^4.2.0",
     "spotify-web-api-node": "^5.0.2"
   },

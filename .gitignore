@@ -1,6 +1,7 @@
 # Config files
 config.json
 playlist_info.csv
+*swing_songs.xlsx
 
 # Logs
 logs
